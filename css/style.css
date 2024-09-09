@@ -185,7 +185,7 @@ header {
     } 
 }
 .single-img-box {
-    padding: 50px 20px;
+    padding: 150px 50px;
     border: 1px solid #dddeee;
     border-radius: 15px;
     overflow: hidden;
@@ -233,6 +233,30 @@ header {
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
 }
+@media (max-width:950px){
+    .featured-product-wrapper{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }  
+}
+@media (max-width:600px){
+    .featured-product-wrapper{
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }  
+}
+.featured-product-title-part {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .single-product-box {
     border: 1px solid #e8e8f3;
     padding: 25px;
@@ -279,6 +303,121 @@ button.add-to-cart-btn:hover {
     background: rgb(237, 237, 255);
     color: rgb(55, 0, 206);
 }
+
+
+
+/* call to action section */
+.call-to-action-section {
+    margin: 50px 0;
+    padding: 50px 0;
+    background: indigo;
+    color: white;
+}
+.call-to-action-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+h3.cta-title {
+    font-size: 30px;
+    text-align: center;
+}
+
+span.cta-title-red {
+    color: red;
+}
+a.cta-link {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    background: #8c46bf;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+a.cta-link:hover {
+    background: #e7c5ff;
+    color: indigo;
+}
+
+
+
+/* newsletter section */
+.newsletter-section {
+    margin: 50px 0;
+    padding: 50px 0;
+    background-color: #f1deff;
+}
+
+.newsletter-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width:800px){
+    .newsletter-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+}
+h2.newsletter-section-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+.newsletter-form-section {
+    background: #ffffff;
+    padding: 5px;
+    border-radius: 8px;
+}
+.newsletter-email-field {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.newsletter-email-field:focus {
+    border: none;
+    outline: none;
+}
+button.newsletter-submit-btn {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: indigo;
+    color: white;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* photo gallary section */
+/* .photo-gallary-section{
+    width: 100vw;
+    overflow: hidden;
+} */
+.photo-gallary-wrapper {
+    /* overflow: hidden; */
+    margin: 10px 0;
+}
+
+img.gallary-single-photo {
+    margin: 8px;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
 
 
 /* footer */
