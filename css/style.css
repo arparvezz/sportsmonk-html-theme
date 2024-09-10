@@ -40,6 +40,25 @@
     }
 }
 
+/* cart drawer styles */
+.cart-drawer-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 5;
+    background: rgb(240, 240, 240);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cart-drawer-inner{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 /* announcement bar */
 .announcment-bar {
     padding: 20px 0;
