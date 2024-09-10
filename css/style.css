@@ -182,11 +182,34 @@ header {
     gap: 20px;
 }
 
+.menu-link-inner-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+@media (max-width:600px){
+    .menu-link-inner-wrapper {
+        display: none;
+    }
+}
 .menu-link {
     text-decoration: none;
     color: black;
 }
-
+.hamburger-menu-btn{
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        background: black;
+        color: white;
+        cursor: pointer;
+        display: none;
+}
+@media (max-width:600px){
+    .hamburger-menu-btn {
+        display: inline-block;
+    }
+}
 .cart-btn {
     border: none;
     padding: 10px;
