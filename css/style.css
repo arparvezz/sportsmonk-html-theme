@@ -47,11 +47,15 @@
     right: 0;
     width: 400px;
     height: 100vh;
-    padding: 20px;
+    padding: 25px;
     border-radius: 5px;
     z-index: 5;
     background: rgb(240, 240, 240);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    display: none;
+}
+.cart-drawer-active{
+    display: block;
 }
 .cart-drawer-inner{
     height: 100%;
@@ -59,6 +63,94 @@
     flex-direction: column;
     justify-content: space-between;
 }
+.cart-drawer-header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 199, 255);
+}
+
+button.cart-drawer-cross-btn {
+    border: none;
+    background: red;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+a.cart-page-link {
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.cart-drawer-body-single-product {
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+img.cart-product-thumbnail {
+    max-width: 100px;
+    width: 100%;
+}
+.cart-product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+}
+a.cart-product-name {
+    text-decoration: none;
+    color: purple;
+}
+.cart-quantity-field > * {
+    border: none;
+    padding: 5px 10px;
+    background: white;
+}
+.cart-quantity-field > .cart-quantity {
+    width: 25%;
+}
+.cart-quantity-field > .cart-quantity:focus {
+    outline: none;
+}
+.cart-drawer-footer {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(255, 199, 255);
+}
+button.cart-checkout-btn {
+    border: none;
+    background: purple;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button.cart-checkout-btn:hover {
+    background: rgb(255, 162, 255);
+    color: purple;
+    font-weight: bold;
+}
+
+span.cart-checkout-btn-money {
+    color: yellow;
+}
+
+
+
+
+
 /* announcement bar */
 .announcment-bar {
     padding: 20px 0;

@@ -40,3 +40,20 @@ new Swiper('#swiper-gallary',{
     }
   }
 })
+
+
+
+// cart drawer
+let cartDrawer = document.querySelector('.cart-drawer-section');
+let cartDrawerBtn = document.querySelector('.cart-btn');
+let cartDrawerCloseBtn = document.querySelector('.cart-drawer-cross-btn');
+
+// show cart drawer when cart btn clicked
+cartDrawerBtn.addEventListener('click',function(event){
+  cartDrawer.classList.add('cart-drawer-active');
+})
+
+// hide cart drawer when close btn clicked
+cartDrawerCloseBtn.addEventListener('click',function(event){
+  cartDrawer.classList.remove('cart-drawer-active');
+})
