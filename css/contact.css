@@ -1,0 +1,73 @@
+/* page title section */
+.page-title-section {
+    padding: 100px 0;
+    background-image: url('../img/page-hero-bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 50px;
+}
+
+@media (max-width:700px) {
+    .page-title-section {
+        padding: 100px 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.page-title-wrapper {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.text-map-section {
+    margin: 50px 0;
+    padding: 50px 0;
+}
+
+.text-map-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+@media (max-width:720px){
+    .text-map-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+.text-map-wrapper > * {
+    flex: 1;
+}
+
+
+.text-map-subtitle {
+    font-size: .8rem;
+    color: #646464;
+  }
+  .text-map-title {
+    font-size: 25px;
+    margin: 20px 0;
+  }
+  .text-box-icon-box-title {
+    margin: 10px 0;
+  }
+
+  .text-map-single-icon-box {
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .text-map-single-icon-box i {
+    color: purple;
+  }

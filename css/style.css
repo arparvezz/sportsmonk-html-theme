@@ -94,6 +94,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 40px 10px;
+    gap: 50px;
   }
   @media (max-width:720px){
     .hero-single-slider {
@@ -343,9 +344,106 @@ a.cta-link:hover {
 
 
 
+
+
+/* img text box section */
+
+
+.img-text-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    gap: 50px;
+}
+@media(max-width:900px){
+    .img-text-box-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 50px 0;
+    }
+}
+.img-text-box-wrapper > * {
+    flex: 1;
+}
+img.img-text-box-img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.img-text-box-content-part {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h2.img-text-box-heading {
+    font-size: 35px;
+}
+
+a.img-text-box-cta {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: purple;
+    color: white;
+    align-self: flex-start;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+a.img-text-box-cta:hover {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgb(255, 206, 255);
+    color: purple;
+    align-self: flex-start;
+    border-radius: 5px;
+}
+
+/* photo gallary section */
+.photo-gallary-section{
+    margin: 30px 0;
+}
+
+.photo-gallary-section-title{
+    text-align: center;
+    margin: 20px 0;
+}
+.photo-gallary-section-title a{
+    text-decoration: none;
+    color: purple;
+}
+img.gallary-single-photo {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+}
+
+
+#swiper-gallary .gallary-pagination{
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#swiper-gallary .swiper-pagination-bullet{
+    background-color: rgba(0, 0, 0, 0.37);
+    opacity: 1;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 2px;
+}
+#swiper-gallary .swiper-pagination-bullet-active{
+    background-color: purple;
+    opacity: 1;
+}
+
+
 /* newsletter section */
 .newsletter-section {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     padding: 50px 0;
     background-color: #f1deff;
 }
@@ -392,30 +490,6 @@ button.newsletter-submit-btn {
     margin-left: 5px;
     cursor: pointer;
 }
-
-/* photo gallary section */
-/* .photo-gallary-section{
-    width: 100vw;
-    overflow: hidden;
-} */
-.photo-gallary-wrapper {
-    /* overflow: hidden; */
-    margin: 10px 0;
-}
-
-img.gallary-single-photo {
-    margin: 8px;
-    max-width: 350px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-
-
-
-
-
 
 
 
