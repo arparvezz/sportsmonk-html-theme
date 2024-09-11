@@ -78,7 +78,7 @@ cartDrawerCloseBtn.addEventListener('click',function(event){
 })
 
 
-// product featured image change on click
+// product featured image change on clicked
 let productFeaturedImg = document.querySelector('.product-featured-img')
 let productThumbnailImgs = document.querySelectorAll('.product-other-img');
 
