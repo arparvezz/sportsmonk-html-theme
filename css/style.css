@@ -94,7 +94,9 @@ a.cart-page-link {
     padding: 5px 10px;
     border-radius: 5px;
 }
-
+.cart-drawer-body {
+    overflow-y: scroll;
+}
 .cart-drawer-body-single-product {
     margin: 20px 0;
     display: flex;
