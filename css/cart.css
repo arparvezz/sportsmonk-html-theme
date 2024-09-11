@@ -1,0 +1,145 @@
+/* page title section */
+.page-title-section {
+  padding: 100px 0;
+  background-image: url('../img/page-hero-bg.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  margin-bottom: 50px;
+}
+
+@media (max-width:700px) {
+  .page-title-section {
+    padding: 100px 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.page-title-wrapper {
+  text-align: center;
+}
+
+.page-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+/* cart section */
+.cart-section {
+  margin: 50px 0;
+}
+
+.cart-section-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+}
+
+@media (max-width: 1150px) {
+  .cart-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+.single-cart-item {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: .1px solid rgba(236, 236, 236, 0.541);
+}
+
+.cart-single-item-thumbnail {
+  max-width: 100px;
+  width: 100%;
+}
+
+.single-cart-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width:800px) {
+  .single-cart-item {
+    padding: 15px;
+    display: flex;
+    justify-content: start;
+  }
+
+  .single-cart-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+  }
+}
+
+.cart-single-item-product-name {
+  text-decoration: none;
+  color: black;
+}
+
+.cart-single-item-quantity-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.cart-single-item-quantity-plus,
+.cart-single-item-quantity-minus {
+  border: none;
+  padding: 5px 10px 8px;
+  border-radius: 5px;
+}
+
+
+
+.cart-single-item-quantity {
+  width: 50px;
+  border: 1px solid #d3d3d3;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.cart-single-item-quantity:focus {
+  outline: none;
+}
+
+
+
+.cart-note-box {
+  border: 1px solid rgb(228, 228, 228);
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.cart-note-box:focus {
+  outline: 0;
+}
+
+.cart-page-update-btn {
+  background: purple;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-page-checkout-btn {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}

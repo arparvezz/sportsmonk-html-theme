@@ -1,0 +1,145 @@
+/* page title section */
+.page-title-section {
+    padding: 100px 0;
+    background-image: url('../img/slider-img-min.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    margin-bottom: 50px;
+}
+
+@media (max-width:700px) {
+    .page-title-section {
+        padding: 100px 30px;
+        margin-bottom: 50px;
+    }
+}
+
+.page-title-wrapper {
+    text-align: center;
+}
+
+.page-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.product-section{
+    margin: 50px 0;
+}
+.product-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+@media (max-width: 800px){
+    .product-section-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    } 
+}
+.product-img-part,
+.product-content-part {
+    flex: 1;
+}
+
+.product-featured-img {
+    max-width: 100%;
+}
+
+
+
+.product-other-img {
+    max-width: 100px;
+    width: 100%;
+    border: 1px solid rgb(247, 243, 243);
+    cursor: pointer;
+}
+.product-other-img:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+}
+.product-content-part {
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.product-form-subtitle {
+    font-size: .8rem;
+    color: purple;
+}
+
+.product-form-title {
+    font-size: 3rem;
+}
+.product-form-price{
+    font-size: 1.5rem;
+}
+.product-details-title {
+    margin: 10px 0;
+}
+.variant-selector-title{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.single-color-variant {
+    margin: 0px 0px 8px 0px;
+  }
+
+.product-form-quantity-label{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.product-form-quantity-field {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 5px;
+}
+
+.product-form-quantity-plus,
+.product-form-quantity-minus {
+    border: none;
+    padding: 5px 10px 8px;
+    border-radius: 5px;
+}
+
+
+.product-form-quantity {
+    width: 150px;
+    border: 1px solid #d3d3d3;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.product-form-quantity:focus {
+    outline: none;
+}
+
+.product-form-buy-now-btn {
+    background: green;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.product-form-add-to-cart-btn {
+    background: purple;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-details-text {
+    margin: 10px 0;
+}

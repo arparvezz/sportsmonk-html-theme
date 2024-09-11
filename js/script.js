@@ -4,6 +4,9 @@ const swiper = new Swiper('#swiper-hero', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    autoplay: {
+      delay: 2000,
+    },
   
     // If we need pagination
     pagination: {
@@ -41,6 +44,22 @@ new Swiper('#swiper-gallary',{
   }
 })
 
+// cart menu
+let cartMenu = document.querySelector('.cart-menu');
+let cartMenuBtn = document.querySelector('.cart-menu-btn');
+let cartMenuCrossBtn = document.querySelector('.cart-menu-cross-btn');
+
+
+// show cart menu when cart-menu btn clicked
+cartMenuBtn.addEventListener('click',function(event){
+  cartMenu.classList.add('cart-menu-active');
+})
+
+// hide cart menu when cart-menu-close btn clicked
+cartMenuCrossBtn.addEventListener('click',function(event){
+  cartMenu.classList.remove('cart-menu-active');
+})
+
 
 
 // cart drawer
@@ -56,4 +75,15 @@ cartDrawerBtn.addEventListener('click',function(event){
 // hide cart drawer when close btn clicked
 cartDrawerCloseBtn.addEventListener('click',function(event){
   cartDrawer.classList.remove('cart-drawer-active');
+})
+
+
+// product featured image change on click
+let productFeaturedImg = document.querySelector('.product-featured-img')
+let productThumbnailImgs = document.querySelectorAll('.product-other-img');
+
+productThumbnailImgs.forEach(singleThumbnail => {
+  singleThumbnail.addEventListener('click',function(event){
+    productFeaturedImg.src = singleThumbnail.src;
+  })
 })
