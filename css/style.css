@@ -193,7 +193,11 @@ header {
     text-decoration: none;
     color: black;
 }
-
+.logo{
+    max-width: 80px;
+    width: 100%;
+    height: auto;
+}
 .menu-section {
     display: flex;
     align-items: center;
